@@ -1,20 +1,20 @@
 class RediaccCli < Formula
   desc "Rediacc CLI - automation and scripting tool"
   homepage "https://www.rediacc.com"
-  version "0.4.90"
+  version "0.4.91"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/rediacc/console/releases/download/v#{version}/rdc-mac-arm64"
-      sha256 "ca0db867c22da29d2ab0bee45230b0c1602c304adc714f628f684cf55f62a30e"
+      sha256 "6fca59954b672983639d04fe404e3eab793e93719e122edea86418181e9121f1"
 
       def install
         bin.install "rdc-mac-arm64" => "rdc"
       end
     else
       url "https://github.com/rediacc/console/releases/download/v#{version}/rdc-mac-x64"
-      sha256 "c42852b89d0f8bf1188e8a9d1b5ed1b7cf4cb2fc52589d289ad54e80c1ab1c7f"
+      sha256 "b0c9cdb0d5638dbcc1e5f0bc28f16e6ca21183d19c5ac66c3f3f463a76beb8a8"
 
       def install
         bin.install "rdc-mac-x64" => "rdc"
@@ -25,14 +25,14 @@ class RediaccCli < Formula
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/rediacc/console/releases/download/v#{version}/rdc-linux-arm64"
-      sha256 "b17ecabef3f0728d3c448e68f2e879fd7e0f460c3290c11a82a4919f97085cd0"
+      sha256 "4a4a69323dd226dc97a2de79ee5b8b4511a1e6c610486866d086caa83341c92d"
 
       def install
         bin.install "rdc-linux-arm64" => "rdc"
       end
     else
       url "https://github.com/rediacc/console/releases/download/v#{version}/rdc-linux-x64"
-      sha256 "0ae7d5d4e4237d54ec457e8d7a22cef6547f90bd9fb30b6fa925022892a6818f"
+      sha256 "fdb5b2c696333dc0cd484507145d2ecffa83f1bb53e6bd13297cf7b660c1ff75"
 
       def install
         bin.install "rdc-linux-x64" => "rdc"
