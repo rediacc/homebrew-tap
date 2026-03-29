@@ -1,7 +1,7 @@
 class RediaccCli < Formula
   desc "Rediacc CLI - automation and scripting tool"
   homepage "https://www.rediacc.com"
-  version "0.7.3"
+  version "0.7.4"
   license "MIT"
 
   on_macos do
